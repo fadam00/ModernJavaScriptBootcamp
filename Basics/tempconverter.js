@@ -12,3 +12,6 @@ console.log("The temperature in celsius is: " + celsius);
 
 kelvin = (fahrenheit - 459.67) * (5/9);
 console.log("The temperature in kelvin is: " + kelvin);
+
+let isFreezing = false;
+console.log(isFreezing);
