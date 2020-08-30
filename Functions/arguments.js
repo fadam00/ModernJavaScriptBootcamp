@@ -24,13 +24,14 @@ console.log(scoreText1);
 //Create a tip calculator using default value(s)
 
 let tipCalculator = function(total,tip = .2){
+    let percentTip = tip * 100;
+    let tipAmount = total * tip;
+    return `A ${percentTip}% on $${total} would be $${tipAmount}`;
 
-    return total * tip;
-
-}
+};
 
 //Show tip value
 
-let tipForToday = tipCalculator(60);
-console.log('Your tip for today is ' + tipForToday);
+let tipForToday = tipCalculator(60,.25);
+console.log(tipForToday);
 
